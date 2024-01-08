@@ -1,0 +1,85 @@
+.thank-you-modal {
+  max-width: 862px;
+  width: 100%;
+  padding: 50px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.thank-you-modal__header,
+.thank-you-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+}
+.thank-you-modal__header-title {
+  color: #000;
+  /* font-family: 'Poppins'; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.thank-you-modal__header-company-tag {
+  display: inline-block;
+  min-height: 30px;
+  padding: 5px;
+  background: var(--nutral-colors-mid-light-grey, #dadada);
+  color: var(--nutral-colors-dark-black, #292929);
+  /* font-family: 'Poppins'; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.thank-you-modal__message {
+  color: #000;
+  text-align: center;
+  /* font-family: 'Poppins'; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.thank-you-modal__message-idenbrid {
+  font-weight: 600;
+}
+
+.thank-you-modal__submit-btn {
+  padding: 18px 76px;
+  color: #fff;
+  text-align: center;
+  background: var(--Primary-blue, #2f80ed);
+  /* font-family: 'Poppins'; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  outline: none;
+}
+.thank-you-modal__submit-btn:not(:disabled):hover {
+  background: #276ac3;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .thank-you-modal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+  .thank-you-modal__submit-btn {
+    width: 100%;
+  }
+}

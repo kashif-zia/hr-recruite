@@ -1,0 +1,101 @@
+.careerSection {
+  background-image: url('/assets/images/Career-Bg-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0px;
+}
+.SubText {
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 3.6px;
+  margin-bottom: 5px;
+}
+.Caraeerh2 {
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 15px;
+}
+.RecruitmentHeading {
+  color: var(--White, #fff);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.CarreerP {
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 15px 0px;
+  width: 100%;
+  max-width: 1100px;
+}
+.CarreerButtonGroup {
+  display: flex;
+  column-gap: 23px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.CarreerBtn {
+  width: 100%;
+  max-width: 260px;
+  height: 64px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s;
+  border: none;
+  outline: none;
+}
+.CarreerBtn:hover {
+  background: var(--Primary-blue, #2f80ed);
+  color: #fff;
+}
+.CareerTabsList {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-left: 15px;
+}
+@media only screen and (max-width: 992px) {
+  .CarreerBtn {
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .CarreerBtn {
+    max-width: 100%;
+  }
+  .SubText {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2.8px;
+  }
+  .Caraeerh2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .RecruitmentHeading {
+    font-size: 18px;
+    line-height: 26px;
+    line-height: 26px;
+  }
+  .CarreerP {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0px;
+  }
+  .CarreerBtn {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

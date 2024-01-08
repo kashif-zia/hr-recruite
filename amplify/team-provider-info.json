@@ -1,0 +1,33 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-idenhrrecruite-staging-55038-authRole",
+      "UnauthRoleArn": "arn:aws:iam::812096089383:role/amplify-idenhrrecruite-staging-55038-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::812096089383:role/amplify-idenhrrecruite-staging-55038-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-idenhrrecruite-staging-55038-deployment",
+      "UnauthRoleName": "amplify-idenhrrecruite-staging-55038-unauthRole",
+      "StackName": "amplify-idenhrrecruite-staging-55038",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:812096089383:stack/amplify-idenhrrecruite-staging-55038/8e754a10-900d-11ee-92bd-0692eb307683",
+      "AmplifyAppId": "d1zetw9blfrz9e"
+    },
+    "categories": {
+      "auth": {
+        "idenhrrecruite7d75eaf6": {}
+      },
+      "storage": {
+        "idenhrstorage": {}
+      },
+      "function": {
+        "idenhrrecruiteEmailHandler": {
+          "email": "hr@idenbrid.jp",
+          "deploymentBucketName": "amplify-idenhrrecruite-staging-55038-deployment",
+          "s3Key": "amplify-builds/idenhrrecruiteEmailHandler-4233377934384b796d4c-build.zip"
+        }
+      },
+      "api": {
+        "idenhrrecruite": {}
+      }
+    }
+  }
+}

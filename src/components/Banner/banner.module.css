@@ -1,0 +1,83 @@
+.bannerSection {
+  margin: 0;
+  padding: 0;
+  background-image: url('/assets/images/Hero-Background.png');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 90px;
+}
+.bannerh1 {
+  color: #000;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 65px;
+}
+.exploreBtn {
+  display: grid;
+  text-align: center;
+  gap: 15px;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+}
+.scrollText {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 3.6px;
+}
+.ovalAnimation {
+  position: relative;
+  width: 30px;
+  height: 52px;
+  border-radius: 20px;
+  border: 1px solid var(--Black, #000);
+  margin: auto;
+}
+.ball {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: #080808;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    height: 2px;
+    bottom: 0px;
+    border-radius: 50%;
+    scale: 1;
+  }
+  100% {
+    bottom: 30px;
+    border-radius: 20px;
+    height: 10px;
+    scale: 1;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bannerh1 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .bannerSection {
+    height: 90vh;
+    margin-top: 76px;
+  }
+}

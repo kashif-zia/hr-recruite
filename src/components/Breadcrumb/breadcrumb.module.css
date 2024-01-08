@@ -1,0 +1,38 @@
+.breadcrumbSection {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  color: var(--Grey, #808080);
+  /* font-family: 'Inter'; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.breadcrumbText {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.homeicon {
+  width: 20px;
+  height: 20px;
+}
+.breadcrumbLink {
+  color: var(--Grey, #808080);
+  /* font-family: 'Inter'; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumbLink {
+    font-size: 12px;
+  }
+  .breadcrumbs {
+    column-gap: 10px;
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "api": {
+    "idenhrrecruite": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "idenhrrecruite7d75eaf6"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authidenhrrecruite7d75eaf6"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "auth": {
+    "idenhrrecruite7d75eaf6": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "idenhrrecruiteEmailHandler": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_idenhrrecruiteEmailHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "idenhrrecruiteEmailHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_idenhrrecruiteEmailHandler_email": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "idenhrrecruiteEmailHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_idenhrrecruiteEmailHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "idenhrrecruiteEmailHandler"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "idenhrstorage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

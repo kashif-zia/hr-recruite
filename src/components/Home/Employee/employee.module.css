@@ -1,0 +1,221 @@
+.employeeSection {
+  padding: 30px 0px 10px;
+}
+
+.employeeBox {
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.employeeInfo {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  display: inline-block;
+}
+
+.employeethumnail {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.employeeName {
+  color: #000;
+  /* font-family: 'Poppins'; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.employeeDesignation {
+  color: var(--nutral-colors-dark-black, #292929);
+  /* font-family: 'Poppins'; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.employeeImage {
+  text-align: right;
+}
+
+.employeerow {
+  margin-bottom: 10px;
+}
+
+/* */
+.closeButton {
+  display: inline-block;
+  padding: 0px;
+  position: absolute;
+  top: 25px;
+  right: 22px;
+  border: none;
+}
+
+.employeepic {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+}
+
+.ModalemployeeBody {
+  padding: 0px;
+}
+
+.employeeDetail {
+  padding: 60px 20px 10px 20px;
+}
+
+.employeeDesination {
+  background: var(--Primary-blue, #2f80ed);
+  color: var(--White, #fff);
+  /* font-family: 'Poppins'; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 6px 10px;
+}
+
+.employeeBackgroundDetail p {
+  color: #000;
+  /* font-family: 'Poppins'; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.closeButtoncloseButton .btn-close:focus {
+  box-shadow: none;
+}
+
+.employeeModalinfo {
+  padding: 20px;
+}
+
+.employeeModalDesignation {
+  color: var(--Primary-blue, #2f80ed);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.employeeModalName {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.employeeModaJoinningDate {
+  color: var(--nutral-colors-mid-grey, #999);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.employeeDesignation {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.employeeSubText {
+  color: var(--Primary-blue, #2f80ed);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 3.6px;
+  margin-bottom: 10px;
+}
+
+.employeeHeadingh2 {
+  color: var(--Black, #000);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.employeeCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .modal-lg,
+  .modal-xl {
+    --bs-modal-width: 946px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .employeeSubText {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2.8px;
+  }
+
+  .employeeHeadingh2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .employeeName {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .employeeDesignation {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .employeepic {
+    width: 40%;
+  }
+
+  .employeeCol {
+    flex-direction: inherit;
+  }
+
+  .employeeModalDesignation {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .employeeModalName {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .employeeModaJoinningDate {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .employeeDetail {
+    padding: 17px 5px 10px 5px;
+  }
+
+  .employeeDesination {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .employeeBackgroundDetail p {
+    font-size: 14px;
+    font-size: 14px;
+  }
+
+  .closeButton {
+    top: 10px;
+    right: 10px;
+  }
+}

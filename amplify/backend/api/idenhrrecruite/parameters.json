@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "idenhrrecruite",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authidenhrrecruite7d75eaf6",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,382 @@
+.infoSection {
+  padding: 30px 0px;
+}
+
+.singleTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  height: 64px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+  line-height: 20px;
+}
+
+.activeTab {
+  background: #2f80ed;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.5s all ease;
+}
+.singleTab:hover{
+  background: #2f80ed;
+  color: #ffffff;
+}
+.scrollTabsRow{
+  display: flex;
+}
+
+.newActiveTab {
+  background: #2f80ed !important;
+  color: #ffffff !important;
+  padding: 0 20px 0 20px !important;
+  font-weight: 500;
+}
+
+.tabDetailSection {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.whatContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 58px 20px;
+}
+
+.whatContainer > h3,
+.philosphyContainer > h3,
+.businessContainer > h3,
+.workContainer > h3 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #2f80ed;
+  margin-bottom: 0;
+}
+
+.navTabs {
+  width: 100% !important;
+}
+
+.whatImage {
+  width: 98.1%;
+  height: auto;
+}
+
+.whatIntroDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+.whatIntroDiv > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #292929;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+.whatImageDiv {
+  padding-left: 10px;
+}
+
+.whatSkillDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.whatSkill {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.whatSkill > h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f80ed;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+.whatSkill > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #292929;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+.philosphyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 83px 20px;
+}
+
+.philosphyContainer > p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  color: #292929;
+  margin-bottom: 0;
+  line-height: 28px;
+}
+
+.aimSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  align-items: stretch;
+}
+
+.singleAimDiv,
+.singleBusinessDiv {
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.aimHeadingDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.aimHeadingDiv > span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  color: #292929;
+}
+
+.divider {
+  height: 1px;
+  background-color: #000000;
+}
+
+.aimContentDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.aimContentDiv > p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 26px;
+}
+
+.aimContentDiv > span,
+.businessContentDiv > span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #292929;
+}
+
+.exploreLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.exploreLink > span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2f80ed;
+  line-height: 26px;
+}
+
+.businessContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 73px 20px;
+}
+
+.businessSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-items: stretch;
+  height: 323px;
+}
+
+.businessHeading > span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  color: #2f80ed;
+}
+
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 94px 20px;
+}
+
+.workDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+.workPara {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #292929;
+  margin-bottom: 0;
+}
+
+.workList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  left: -10px;
+  margin-bottom: 0;
+}
+
+.workList > li {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #292929;
+}
+
+.workImageDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+.tabsIdenbridFlow {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .tabDetailSection {
+    margin: 0;
+  }
+  .whatContainer,
+  .philosphyContainer,
+  .workContainer,
+  .businessContainer {
+    padding: 20px 10px 58px 10px;
+  }
+  .whatContainer > h3,
+  .philosphyContainer > h3,
+  .businessContainer > h3,
+  .workContainer > h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .whatIntroDiv > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .whatSkillDiv {
+    gap: 5px;
+  }
+  .whatSkill > p {
+    font-size: 14px;
+  }
+
+  .whatIntroDiv {
+    padding-right: 0;
+  }
+  .whatImageDiv,
+  .workImageDiv {
+    padding-top: 20px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aimSection,
+  .businessSection {
+    flex-direction: column;
+  }
+  .workPara {
+    line-height: 24px;
+  }
+  .businessSection {
+    height: auto;
+  }
+  .show {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .whatImage,
+  .workImage {
+    width: 284px;
+  }
+  .whatImageDiv,
+  .workImageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .businessSection {
+    height: 100%;
+  }
+}
+
+.scrollable {
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.newSingleTab {
+  display: flex;
+  background: #efefef;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  height: 64px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0 20px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .scrollable {
+    display: none;
+  }
+  .tabDetailSection {
+    min-height: 520px;
+  }
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}

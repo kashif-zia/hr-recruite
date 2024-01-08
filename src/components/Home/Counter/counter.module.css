@@ -1,0 +1,64 @@
+.counterSection {
+  padding: 30px 0px;
+}
+.greyBox {
+  background-image: url('/assets/images/Grey.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.blueBox {
+  background-image: url('/assets/images/Blue.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.blueBox .counterLabel,
+.blueBox .counterNo {
+  color: #fff;
+}
+.greyBox .counterLabel,
+.greyBox .counterNo {
+  color: var(--Black, #000);
+}
+
+.counterBox {
+  padding: 30px 15px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Happycustomeresvg {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 15px;
+}
+.teamgrowthicon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 15px;
+}
+.growthrate {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 15px;
+}
+.counterNo {
+  text-align: center;
+  /* font-family: 'Poppins'; */
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+}
+.counterLabel {
+  text-align: center;
+  /* font-family: 'Poppins'; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+@media only screen and (max-width: 767px) {
+}

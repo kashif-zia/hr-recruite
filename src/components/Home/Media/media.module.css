@@ -1,0 +1,365 @@
+.mediaSection {
+  padding: 30px 0px;
+}
+
+.mediaH2 {
+  color: var(--Primary-blue, #2f80ed);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.LeftTriangleBox {
+  height: 152px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.triangleImageBox {
+  color: rgb(64, 64, 64);
+  border: 1px solid #000;
+  vertical-align: middle;
+  position: relative;
+  border-left: none;
+  border-right: none;
+  padding: 15px 0px 15px 70px;
+  width: 88%;
+  margin-left: 90px;
+  background-color: #fff;
+}
+
+.triangleImageBox::after {
+  content: '';
+  width: 63px;
+  height: 63px;
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: -31px;
+  border: 1px solid #000;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 2px;
+  -webkit-transform: rotate(47deg) skew(5deg);
+  -moz-transform: rotate(47deg) skew(5deg);
+  transform: rotate(47deg) skew(5deg);
+  background-color: #fff;
+}
+
+.triangleList {
+  margin-bottom: 0px;
+  display: flex;
+  column-gap: 20px;
+  padding-left: 2px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.triangleList {
+  list-style: none;
+}
+
+.triangleList li {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.MaleFemaleBox .triangleList li:nth-child(1)::before {
+  background: var(--Primary-blue, #2f80ed);
+}
+
+.MaleFemaleBox .triangleList li:nth-child(2)::before {
+  background: #b6d5ff;
+}
+
+.AgeStructureBox .triangleList li:nth-child(1)::before {
+  background: var(--Primary-blue, #2f80ed);
+}
+
+.AgeStructureBox .triangleList li:nth-child(2)::before {
+  background: #b6d5ff;
+}
+.AgeStructureBox .triangleList li:nth-child(3)::before {
+  background: #d7e8ff;
+}
+
+.triangleList li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 2px;
+}
+
+.triangleBoxLabel {
+  margin-bottom: 10px;
+  color: #000;
+  /* font-family: 'Poppins'; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.Lefttrianglesvg {
+  width: 150px;
+  height: 150px;
+  top: -31px;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.LeftmediaBoxItem {
+  position: relative;
+  width: 100%;
+}
+
+/* */
+.RightTriangleBox {
+  height: 152px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.RightmediaBoxItem {
+  position: relative;
+  width: 100%;
+}
+
+.Righttrianglesvg {
+  width: 150px;
+  height: 150px;
+  top: -31px;
+  right: 0px;
+  position: absolute;
+  z-index: 2;
+}
+
+.RighttriangleImageBox {
+  color: rgb(64, 64, 64);
+  border: 1px solid #000;
+  vertical-align: middle;
+  position: relative;
+  border-left: none;
+  border-right: none;
+  padding: 15px 70px 15px 0px;
+  width: 88%;
+  margin-left: 44px;
+  background-color: #fff;
+}
+
+.RighttriangleImageBox::after {
+  content: '';
+  width: 63px;
+  height: 63px;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: -31px;
+  border: 1px solid #000;
+  border-right: none;
+  border-top: none;
+  border-radius: 2px;
+  -webkit-transform: rotate(47deg) skew(5deg);
+  -moz-transform: rotate(47deg) skew(5deg);
+  transform: rotate(47deg) skew(5deg);
+  background-color: #fff;
+}
+
+.RighttriangleBoxLabel {
+  margin-bottom: 10px;
+  color: #000;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.RighttriangleList {
+  margin-bottom: 0px;
+  display: flex;
+  column-gap: 20px;
+  padding-left: 2px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  z-index: 10;
+  position: relative;
+}
+
+.RighttriangleList {
+  list-style: none;
+}
+
+.RighttriangleList li {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.OccupationBox .RighttriangleList li:nth-child(1)::before {
+  background: #2b66b6;
+}
+
+.OccupationBox .RighttriangleList li:nth-child(2)::before {
+  background: #2b66b6;
+}
+
+.OccupationBox .RighttriangleList li:nth-child(3)::before {
+  background: #5fa3ff;
+}
+
+.OccupationBox .RighttriangleList li:nth-child(4)::before {
+  background: #b6d5ff;
+}
+
+.OccupationBox .RighttriangleList li:nth-child(5)::before {
+  background: #e7f1ff;
+}
+
+.EmployeeBox .RighttriangleList li:nth-child(1)::before {
+  background: var(--Primary-blue, #2f80ed);
+}
+
+.EmployeeBox .RighttriangleList li:nth-child(2)::before {
+  background: #b6d5ff;
+}
+
+.RighttriangleList li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 2px;
+}
+
+.desktopSection {
+  display: block;
+}
+
+.spSection {
+  display: block;
+}
+
+.spMediaBox {
+  display: none;
+}
+
+.spmalefemaleicon,
+.spoccupationicon,
+.sphappycustomericon,
+.spemployeeicon {
+  width: 150px;
+  height: 150px;
+}
+
+.spMediaBoxinfo {
+  width: 100%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1180px) {
+  .RighttriangleList {
+    column-gap: 5px;
+  }
+
+  .Righttrianglesvg {
+    width: 150px;
+    height: 150px;
+  }
+  .RighttriangleImageBox {
+    width: 79%;
+    margin-left: auto;
+    margin-right: 100px;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Righttrianglesvg {
+    top: -17px;
+  }
+  .RighttriangleImageBox::after {
+    width: 79px;
+    height: 79px;
+    top: 17px;
+    left: -39px;
+  }
+  .triangleImageBox::after {
+    width: 79px;
+    height: 79px;
+    top: 17px;
+    right: -39px;
+  }
+  .triangleImageBox {
+    width: 79%;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Lefttrianglesvg {
+    top: -17px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .spMediaBox {
+    padding: 10px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .triangleBoxLabel {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0px;
+  }
+
+  .mediaH2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .triangleList li,
+  .RighttriangleList li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .desktopSection {
+    display: none;
+  }
+
+  .spSection {
+    display: block;
+  }
+
+  .RighttriangleList {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+}

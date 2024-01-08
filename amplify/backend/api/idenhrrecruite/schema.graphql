@@ -1,0 +1,93 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+
+type User
+  @model
+  @auth(
+    rules: [
+      { allow: public, operations: [read] }
+      { allow: private, operations: [read] }
+      { allow: owner, ownerField: "id", operations: [read, update] }
+    ]
+  ) {
+  id: ID!
+  name: String!
+  email: String!
+  avatar_id: String!
+  email_verified: Boolean
+  status: String @default(value: "active")
+  companyId: ID
+  companyDetail: CompanyProfile @hasOne(fields: ["companyId"])
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Category @model @auth(rules: [{ allow: public, operations: [read] }, { allow: private }]) {
+  id: ID!
+  categoryName: String!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Job @model @auth(rules: [{ allow: public, operations: [read] }, { allow: private }]) {
+  id: ID!
+  jobTitle: String!
+  jobType: String!
+  jobGroup: String!
+  jobLayer: String!
+  jobDepartment: String!
+  jobCoverImage: String!
+  jobDescription: String!
+  keyResponsibilities: String!
+  requirements: String!
+  distinctiveFeaturesOfTheRole: String!
+  expectedSalary: String!
+  workingHours: String!
+  benefits: String!
+  applicationProcess: String!
+  equalOpportunityStatement: String!
+  probationPeriod: String @default(value: "Yes")
+  application: [Application] @hasMany
+  companyId: ID
+  company: CompanyProfile @hasOne(fields: ["companyId"])
+  status: String @default(value: "active")
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type CompanyProfile @model @auth(rules: [{ allow: public, operations: [read] }, { allow: private }]) {
+  id: ID!
+  name: String!
+  established: String
+  capital: String
+  address: String!
+  noOfEmployees: Int!
+  companyOverview: String!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Application
+  @model
+  @auth(
+    rules: [{ allow: public, operations: [create, read] }, { allow: private, operations: [read, update, delete] }]
+  ) {
+  id: ID!
+  name: String!
+  jobTitle: String!
+  jobId: ID
+  jobDetail: Job @hasOne(fields: ["jobId"])
+  currentCompany: String!
+  education: String!
+  age: Int!
+  phone_number: String!
+  experience: String!
+  linkedin: String!
+  portfolio: [String]
+  email: String!
+  message: String
+  resume: String!
+  applicationStatus: String @default(value: "active")
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
